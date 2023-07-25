@@ -1,0 +1,22 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import Tabla from "@components/tabla.astro";
+
+---
+
+<Layout title="Budget">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Budget</Fragment>
+      <Fragment slot="desc"
+        >General budget</Fragment
+      >
+    </Sectionhead>
+<div class="pt-10">
+  <Tabla></Tabla>
+</div>
+
+  </Container>
+</Layout>

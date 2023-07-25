@@ -1,0 +1,64 @@
+<!-- TablaComponent.astro -->
+---
+export let data = [
+  { col1: "Dato 1", col2: "Dato 2", col3: "Dato 3" },
+  { col1: "Dato A", col2: "Dato B", col3: "Dato C" },
+  // Agrega más filas según tus necesidades.
+];
+---
+
+<table class="table-auto w-full ">
+  <!-- Encabezado de la tabla -->
+  <thead class="pt-20">
+    <tr>
+      <th class="px-4 py-2">Category</th>
+      <th class="px-4 py-2">Amount USD</th>
+     
+    </tr>
+  </thead>
+  <tbody>
+    
+      <!-- Iteración para cada elemento en "data" -->
+      <tr class="border-t ">
+        <td class="px-4 py-2 align-middle text-center">Work team</td>
+        <td class="px-4 py-2 align-middle text-center">$ 8.149</td>
+      </tr>
+   
+  </tbody>
+  <tbody>
+    
+    <!-- Iteración para cada elemento en "data" -->
+    <tr class="border-t">
+      <td class="px-4 py-2 align-middle text-center">Renting</td>
+      <td class="px-4 py-2 align-middle text-center">$ 8.059</td>
+    </tr>
+ 
+</tbody>
+<tbody>
+    
+    <!-- Iteración para cada elemento en "data" -->
+    <tr class="border-t">
+      <td class="px-4 py-2 align-middle text-center">Production</td>
+      <td class="px-4 py-2 align-middle text-center">$ 17.234</td>
+    </tr>
+ 
+</tbody>
+<tbody>
+    
+    
+    <tr class="border-t">
+      <td class="px-4 py-2 align-middle text-center">Comunication</td>
+      <td class="px-4 py-2 align-middle text-center">$ 6.805</td>
+    </tr>
+ 
+</tbody>
+ <tbody>
+    
+    
+    <tr class="border-t">
+      <td class="px-4 py-2 align-middle text-center">TOTAL</td>
+      <td class="px-4 py-2 align-middle text-center"> $ 40.247</td>
+    </tr>
+ 
+</tbody>
+</table>
